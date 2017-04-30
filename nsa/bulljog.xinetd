@@ -1,0 +1,12 @@
+service bulljog
+{
+	disable		= no
+	type		= UNLISTED
+	socket_type	= stream
+	protocol	= tcp
+	user		= sage
+	wait		= no
+  bind		= 0.0.0.0
+  server		= /home/bulljog/run.sh
+  port		= 11344
+}
